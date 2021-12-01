@@ -40,10 +40,6 @@ namespace IS_3_19_MenshikovAA
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,11 +48,13 @@ namespace IS_3_19_MenshikovAA
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(15, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(203, 23);
             this.button1.TabIndex = 0;
@@ -69,7 +67,7 @@ namespace IS_3_19_MenshikovAA
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 252);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(786, 186);
+            this.listBox1.Size = new System.Drawing.Size(830, 186);
             this.listBox1.TabIndex = 1;
             // 
             // textBox1
@@ -95,73 +93,45 @@ namespace IS_3_19_MenshikovAA
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(115, 119);
+            this.textBox4.Location = new System.Drawing.Point(115, 161);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(115, 145);
+            this.textBox5.Location = new System.Drawing.Point(115, 187);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 6;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(115, 171);
+            this.textBox6.Location = new System.Drawing.Point(115, 213);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 7;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(612, 44);
+            this.textBox7.Location = new System.Drawing.Point(406, 164);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 8;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(612, 90);
+            this.textBox8.Location = new System.Drawing.Point(406, 187);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 9;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(612, 116);
+            this.textBox9.Location = new System.Drawing.Point(406, 213);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 10;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(612, 142);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 11;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(612, 168);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 12;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(612, 194);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 13;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(612, 220);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 14;
             // 
             // label1
             // 
@@ -193,7 +163,7 @@ namespace IS_3_19_MenshikovAA
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 119);
+            this.label4.Location = new System.Drawing.Point(12, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 19;
@@ -202,7 +172,7 @@ namespace IS_3_19_MenshikovAA
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 145);
+            this.label5.Location = new System.Drawing.Point(12, 187);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 20;
@@ -211,7 +181,7 @@ namespace IS_3_19_MenshikovAA
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 171);
+            this.label6.Location = new System.Drawing.Point(12, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 13);
             this.label6.TabIndex = 21;
@@ -220,26 +190,47 @@ namespace IS_3_19_MenshikovAA
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(496, 41);
+            this.label7.Location = new System.Drawing.Point(316, 164);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 22;
-            this.label7.Text = "label7";
+            this.label7.Text = "Частота ГП";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(499, 12);
+            this.button2.Location = new System.Drawing.Point(319, 119);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(187, 23);
             this.button2.TabIndex = 23;
-            this.button2.Text = "button2";
+            this.button2.Text = "GPU";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(316, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Производитель";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(316, 216);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 13);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Обьём памяти";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(854, 450);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -248,10 +239,6 @@ namespace IS_3_19_MenshikovAA
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -283,10 +270,6 @@ namespace IS_3_19_MenshikovAA
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -295,5 +278,7 @@ namespace IS_3_19_MenshikovAA
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

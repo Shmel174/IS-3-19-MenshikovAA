@@ -50,7 +50,7 @@ namespace IS_3_19_MenshikovAA
             }
             public new string Display()
             {
-                return base.Display() + $"| Данные о процессоре: Частота ЦП: {Hz}, Количество ядер: {vCores}, Количество потоков: {vPotoks}" ;
+                return base.Display() + $"| Данные о процессоре: Частота ЦП: {Hz} ГЦ, Количество ядер: {vCores}, Количество потоков: {vPotoks}" ;
             }
         }
         class GPU<A> : Components<A>
@@ -67,20 +67,53 @@ namespace IS_3_19_MenshikovAA
             }
             public new string Display()
             {
-                return base.Display() + $"| Данные о видеокарте: Частота ГП: {gHz}, Производитель: {Prod}, Объём памяти: {vMemory}";
+                return base.Display() + $"| Данные о видеокарте: Частота ГП: {gHz} ГЦ, Производитель: {Prod}, Объём памяти: {vMemory} ГБ";
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            CPU<string> cpu = new CPU<string>(Convert.ToString(textBox1.Text), 
-                        Convert.ToInt32(textBox2.Text), 
-                       Convert.ToString(textBox3.Text), 
-                        Convert.ToInt32(textBox4.Text), 
-                        Convert.ToInt32(textBox5.Text), 
-                        Convert.ToInt32(textBox6.Text)); 
-            listBox1.Items.Add(cpu.Display());
+            if (textBox1.TextLength != 0 && textBox2.TextLength != 0 && textBox3.TextLength != 0 && textBox4.TextLength != 0 && textBox5.TextLength != 0 && textBox6.TextLength != 0)
+            {
+                try
+                {
+                    CPU<string> cpu = new CPU<string>(Convert.ToString(textBox1.Text),
+                        Convert.ToInt32(textBox2.Text),
+                       Convert.ToString(textBox3.Text),
+                        Convert.ToInt32(textBox4.Text),
+                        Convert.ToInt32(textBox5.Text),
+                        Convert.ToInt32(textBox6.Text));
+                    listBox1.Items.Add(cpu.Display());
+                }
+                catch (Exception ex) { MessageBox.Show($"{ex}"); }
+            }
+            else
+            {
+                MessageBox.Show("Введите все данные.");
+            }
+        }
+            private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            if (textBox1.TextLength != 0 && textBox2.TextLength != 0 && textBox3.TextLength != 0 && textBox7.TextLength != 0 && textBox8.TextLength != 0 && textBox9.TextLength != 0)
+            {
+                try
+                {
+                    GPU<string> gpu = new GPU<string>(Convert.ToString(textBox1.Text),
+                        Convert.ToInt32(textBox2.Text),
+                       Convert.ToString(textBox3.Text),
+                        Convert.ToInt32(textBox7.Text),
+                        Convert.ToString(textBox8.Text),
+                        Convert.ToInt32(textBox9.Text));
+            listBox1.Items.Add(gpu.Display());
+                }
+                catch (Exception ex) { MessageBox.Show($"{ex}"); }
+            }
+            else
+            {
+                MessageBox.Show("Введите все данные.");
+            }
         }
     }
 }
