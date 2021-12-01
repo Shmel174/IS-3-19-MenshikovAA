@@ -18,19 +18,69 @@ namespace IS_3_19_MenshikovAA
         }
 
 
-        abstract class Components
+        abstract class Components<A>
         {
+            A Art;
             public int cena { get; set; }
             public string godV { get; set; }
-        }
-        public void Display()
-        {
+            public Components(int cena, string godV, A Art)
+            {
+                this.cena = cena;
+                this.godV = godV;
+                this.Art = Art;
+            }
 
+            public string Display()
+            {
+                return $"Цена: {cena} руб., Год производства: {godV} год, Артикул: {Art} ";
+            }
+        }
+
+        class CPU<A> : Components<A>
+        {
+            private double Hz { get; set; }
+            private int vCores { get; set; }
+            private int vPotoks { get; set; }
+            public CPU(A Art , int cena, string godV, double Hz, int vCores,int vPotoks)
+            :base(cena,godV,Art)
+            {
+                this.Hz = Hz;
+                this.vCores = vCores;
+                this.vPotoks = vPotoks;
+            }
+            public new string Display()
+            {
+                return base.Display() + $"| Данные о процессоре: Частота ЦП: {Hz}, Количество ядер: {vCores}, Количество потоков: {vPotoks}" ;
+            }
+        }
+        class GPU<A> : Components<A>
+        {
+            private double gHz { get; set; }
+            private string Prod { get; set; }
+            private int vMemory { get; set; }
+            public GPU(A Art, int cena, string godV, double gHz, string Prod, int vMemory)
+            : base(cena, godV, Art)
+            {
+                this.gHz = gHz;
+                this.Prod = Prod;
+                this.vMemory = vMemory;
+            }
+            public new string Display()
+            {
+                return base.Display() + $"| Данные о видеокарте: Частота ГП: {gHz}, Производитель: {Prod}, Объём памяти: {vMemory}";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            listBox1.Items.Clear();
+            CPU<string> cpu = new CPU<string>(Convert.ToString(textBox1.Text), 
+                        Convert.ToInt32(textBox2.Text), 
+                       Convert.ToString(textBox3.Text), 
+                        Convert.ToInt32(textBox4.Text), 
+                        Convert.ToInt32(textBox5.Text), 
+                        Convert.ToInt32(textBox6.Text)); 
+            listBox1.Items.Add(cpu.Display());
         }
     }
 }
