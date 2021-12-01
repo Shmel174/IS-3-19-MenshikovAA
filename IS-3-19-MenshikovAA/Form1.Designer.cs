@@ -65,9 +65,9 @@ namespace IS_3_19_MenshikovAA
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 252);
+            this.listBox1.Location = new System.Drawing.Point(3, 252);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(830, 186);
+            this.listBox1.Size = new System.Drawing.Size(972, 186);
             this.listBox1.TabIndex = 1;
             // 
             // textBox1
@@ -228,7 +228,7 @@ namespace IS_3_19_MenshikovAA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 450);
+            this.ClientSize = new System.Drawing.Size(987, 450);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
