@@ -19,7 +19,8 @@ namespace IS_3_19_MenshikovAA
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Menu());
         }
-        public class ConnectionDB
+    }
+        public class ConnDB
         {
             public MySqlConnection connDB()
             {
@@ -33,4 +34,5 @@ namespace IS_3_19_MenshikovAA
                 return conn;
             }
         }
+    }
 
