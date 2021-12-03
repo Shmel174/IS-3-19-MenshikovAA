@@ -24,8 +24,10 @@ namespace IS_3_19_MenshikovAA
         private DataTable table = new DataTable();
         private void Form5_Load(object sender, EventArgs e)
         {
+            // Нужно в случае, если попытка соединения с БД провалиться 
             try
             {
+                // Служит для связи с БД
                 conn.Open();
                 string commandStr = "SELECT idStud AS 'ID', fioStud AS 'ФИО', datetimeStud AS 'Дата рождения' FROM t_PraktStud";
                 MyDA.SelectCommand = new MySqlCommand(commandStr, ConnDB_Lib.connDB_lib());
