@@ -41,6 +41,32 @@ namespace IS_3_19_MenshikovAA
             {
                 MessageBox.Show("Я подключился!");
                 connectionDB.connDB().Close();
+                // Нужно чтобы было выравнивание строк
+                dataGridView1.Columns[0].Visible = true;
+                dataGridView1.Columns[1].Visible = true;
+                dataGridView1.Columns[2].Visible = true;
+
+                dataGridView1.Columns[0].FillWeight = 20;
+                dataGridView1.Columns[1].FillWeight = 40;
+                dataGridView1.Columns[2].FillWeight = 40;
+
+                dataGridView1.Columns[0].ReadOnly = true;
+                dataGridView1.Columns[1].ReadOnly = true;
+                dataGridView1.Columns[2].ReadOnly = true;
+
+                dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                dataGridView1.RowHeadersVisible = false;
+
+                dataGridView1.ColumnHeadersVisible = true;
+
+                dataGridView1.AllowUserToResizeColumns = false;
+
+                dataGridView1.AllowUserToResizeRows = false;
+
+                dataGridView1.MultiSelect = false;
             }
         }
 

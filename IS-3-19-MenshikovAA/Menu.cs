@@ -40,5 +40,11 @@ namespace IS_3_19_MenshikovAA
             Form4 newForm = new Form4();
             newForm.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form5 newForm = new Form5();
+            newForm.ShowDialog();
+        }
     }
 }
